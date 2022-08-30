@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/pokeball.png" type="image/x-icon">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<header>
+    <div class="icono">
+
+        <div class="icono-blanco">
+            <div class="icono-azul">
+                <div class="icono-aqua">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="icono-rojo">
+
+        </div>
+
+        <div class="icono-amarrillo">
+
+        </div>
+
+        <div class="icono-amarrillo">
+
+        </div>
+
+    </div>
+    <img src="assets/pokedex-header.png" alt="">
+</header>
+
+<body>
+
+
+    <section>
+
+        <img class="cruceta-left" src="assets/cruceta.png" alt="">
+
+        <div class="search">
+            <form action="" onsubmit="searchPokemon(event)">
+                <input type="text" name="pokemon" placeholder="Escribe tu pokemon" autocomplete="off">
+            </form>
+            <div data-poke-card class="poke-card">
+
+                <div data-poke-name class="poke-card-title">Pokedex</div>
+                <div data-poke-img-container class="img-container">
+                    <img data-poke-img class="poke-img" src="assets/pokeball.png" />
+                </div>
+                <div data-poke-id class="id-container"></div>
+
+            </div>
+        </div>
+
+        <div class="types-abilities-data">
+            <div data-poke-card class="types-card">
+                <h1>Tipo:</h1>
+                <div data-poke-types class="poke-types"><img src="assets/loading-11.gif" alt=""></div>
+            </div>
+
+            <div data-poke-card class="abilities-card">
+                <h1>Habilidades:</h1>
+                <div data-poke-abilities class="poke-abilities"><img src="assets/loading-11.gif" alt=""></div>
+            </div>
+
+        </div>
+
+        <div data-poke-card class="stats-card">
+            <h1>Estadisticas:</h1>
+            <div data-poke-stats class="poke-stats"><img src="assets/loading-11.gif" alt=""></div>
+        </div>
+
+        <img class="cruceta-right" src="assets/cruceta.png" alt="">
+    </section>
+
+</body>
+
+<footer>
+    <script src="script.js" type="text/javascript" defer></script>
+
+    <h3>© Daniel Hernández</h3>
+
+</footer>
+
+</html>
